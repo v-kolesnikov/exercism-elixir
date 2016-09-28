@@ -18,5 +18,10 @@ RUN exercism configure --key=$EXERCISM_KEY --dir="$APP_HOME/lib/exercism"
 
 WORKDIR $APP_HOME
 
+#configure Elixir
+COPY mix.exs $APP_HOME/
+RUN mix local.hex --force
+RUN mix deps.get
+
 USER root
 CMD bash
