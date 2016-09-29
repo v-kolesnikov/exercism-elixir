@@ -1,4 +1,4 @@
 EXERCISM_LANG := elixir
-TEST_COMMAND := true
+TEST_COMMAND := mix credo
 
 include ../docker.mk
