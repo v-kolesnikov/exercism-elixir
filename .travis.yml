@@ -5,3 +5,4 @@ elixir:
 
 script:
   - mix credo
+  - mix test lib/exercism/elixir/
