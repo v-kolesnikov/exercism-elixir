@@ -70,9 +70,7 @@ defmodule Phone do
   """
   @spec pretty(String.t) :: String.t
   def pretty(raw) do
-    <<area::binary-3>> <>
-    <<num1::binary-3>> <>
-    <<num2::binary-4>> = Phone.number(raw)
+    <<area::binary-3, num1::binary-3, num2::binary-4>> = Phone.number(raw)
     "(#{area}) #{num1}-#{num2}"
   end
 end
