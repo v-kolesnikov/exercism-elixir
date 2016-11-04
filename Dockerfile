@@ -1,4 +1,4 @@
-FROM elixir
+FROM elixir:1.3.4
 MAINTAINER Vasily Kolesnikov re.vkolesnikov@gmail.com
 
 ARG EXERCISM_CLI_VERSION
